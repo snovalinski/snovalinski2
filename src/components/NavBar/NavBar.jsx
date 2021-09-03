@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
-import { AiOutlineShoppingCart } from "react-icons/bs"
+
 
 const NavBar=()=>{
     return (
@@ -27,7 +27,7 @@ const NavBar=()=>{
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
-                    <AiOutlineShoppingCart />
+                   
                     <CartWidget />
                 </Navbar>
                 
