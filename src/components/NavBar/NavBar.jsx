@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown"
 
 
 
-const NavBar=()=>{
+export const NavBar=()=>{
     return (
         <>
             <Navbar bg="light" expand="lg">
@@ -27,11 +27,9 @@ const NavBar=()=>{
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
-                   
                     <CartWidget />
                 </Navbar>
                 
     </>
   )
 }
-export default NavBar
