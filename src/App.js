@@ -6,8 +6,17 @@ import {ItemListContainer} from './components/ItemListContainer';
 
 function App() {
     return (
-        <><NavBar /><ItemListContainer /></>
-    )
+        <div className="App"
+        >
+
+        <NavBar />
+        <ItemListContainer greeting="Hola Juan"/>
+        <ItemListContainer greeting="Hola Juliano"/>
+        
+
+        
+        </div> 
+    );
   }
 
   export default App;

@@ -1,8 +1,9 @@
 
-export const ItemListContainer = (Greeting) => {
+export function ItemListContainer ({greeting}) {
+    console.log (greeting)
     return (
         <div>
-           <h1>Hola esta es mi app</h1> 
+           <p>{greeting}</p> 
         </div>
     )
 }
