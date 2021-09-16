@@ -6,6 +6,11 @@ import {ItemListContainer} from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 
 function App() {
+
+ const onAdd = (cant) => {
+        console.log (cant)
+    }
+
     return (
         <div className="App"
         >
