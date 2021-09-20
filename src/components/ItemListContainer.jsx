@@ -5,17 +5,17 @@ import ItemList from "./ItemList/ItemList"
 
 
 export function ItemListContainer ({greeting}) {
-   const [personas, setPersonas] =useState ([])
-   const [loading, setLoading] =useState(true)
+   const [productos, setProductos] =useState([])
+   const [loading, setLoading] = useState(true)
 
-    const onAdd = (cant) => {
-        console.log (cant)
+    const onAdd=(cant)=> {
+        console.log(cant)
     }
 
     useEffect (() => {
         getFetch
         .then(respuesta =>{
-            setPersonas(respuesta)
+            setProductos(respuesta)
         })
         .catch(error => console.log(error))
         .finally(()=> setLoading(false))
@@ -25,11 +25,10 @@ export function ItemListContainer ({greeting}) {
     return (
         <div>
            <p>{greeting}</p> 
-        {loading ? <h3>Cargando...</h3> :<ItemList/>} 
-
+        {loading ? <h3>Cargando...</h3> :<ItemList productos={productos}/>}
 
            <ItemCount stock={10} initial ={1} onAdd={onAdd} />
-        </div>
+         </div>
     )
 }
 
