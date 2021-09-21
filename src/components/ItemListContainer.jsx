@@ -4,7 +4,7 @@ import ItemCount from "./ItemCount"
 import ItemList from "./ItemList/ItemList"
 
 
-export function ItemListContainer ({greeting}) {
+function ItemListContainer ({greeting}) {
    const [productos, setProductos] =useState([])
    const [loading, setLoading] = useState(true)
 
@@ -31,6 +31,8 @@ export function ItemListContainer ({greeting}) {
          </div>
     )
 }
+
+export default ItemListContainer
 
 
 

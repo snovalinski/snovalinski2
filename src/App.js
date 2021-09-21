@@ -1,16 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavBar} from './components/NavBar/NavBar';
-import {ItemListContainer} from './components/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
-// import imagenes from "./Imagenes";
 
 function App() {
 
-//  const onAdd = (cant) => {
-//         console.log (cant)
-//     }
+ const onAdd = (cant) => {
+        console.log (cant)
+    }
 
     return (
         <div className="App"
