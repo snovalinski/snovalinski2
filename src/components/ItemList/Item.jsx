@@ -6,7 +6,7 @@ const Item = ({producto}) => {
                     <h3>Home Scaler</h3>
                 </div>
                 <div className="card-body">
-                    <img src={producto.foto} />
+                    <img src={producto.foto} alt="foto"/>
                     {producto.precio}
                     <p>80 usd</p>
                 </div>
