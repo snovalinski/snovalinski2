@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {getFetchUno} from '../../Utils/Mock';
-import ItemDetail from "../Components/Containers/ItemDetail";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 
 export const ItemDetailContainer = () => {

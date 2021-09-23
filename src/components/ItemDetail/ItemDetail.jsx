@@ -4,7 +4,7 @@ const ItemDetail = (item) => {
     return (
         <>
          <h3>{item.id}</h3>   
-         <h3>{item.color}</h3>
+         <h3>{item.dato}</h3>
         </>
     )
 }
